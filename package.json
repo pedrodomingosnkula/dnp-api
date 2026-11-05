@@ -2,13 +2,12 @@
   "name": "dnp-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server.js",
   "scripts": {
-    "dev": "tsx watch src/server.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pedrodomingosnkula/dnp-api.git"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [],
   "author": "",
