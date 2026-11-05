@@ -7,11 +7,13 @@ const router = Router();
 
 router.get('/', (request: Request, response: Response) => {
 
-  const helloMsg = {
-    msg: 'Olá, seja bem-vindo, DNP!'
-  };
+  // const helloMsg = {
+  //   msg: 'Olá, seja bem-vindo, DNP!'
+  // };
 
-  return response.status(200).json(helloMsg);
+  return response.render("home", {
+    nome: "Domingos"
+  });
 
 })
 

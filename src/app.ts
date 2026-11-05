@@ -6,4 +6,10 @@ export const app = express();
 
 app.use(express.json());
 
+// Configurar EJS
+app.set("view engine", "ejs");
+
+// Localização dos templates
+app.set("views", "./src/views");
+
 app.use('/', routerHello);
